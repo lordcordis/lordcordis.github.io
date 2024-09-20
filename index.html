@@ -30,19 +30,20 @@
         }
 
         h1 {
-            font-size: 44px;
+            font-size: 2.5rem; /* Smaller font size */
             font-weight: 600; /* Semibold */
             background: linear-gradient(white, lightgrey);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align: center;
-            margin: 0;
+            margin: 0 0 20px 0; /* Added bottom margin for spacing */
         }
 
         .bottom-text {
             text-align: center;
             color: white;
-            font-size: 18px;
+            font-size: 1rem; /* Smaller font size */
+            margin: 0 0 30px 0; /* Added bottom margin for spacing */
         }
 
         .bottom-container {
@@ -70,6 +71,31 @@
             height: auto;
             border-radius: 10px;
             margin: 10px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Adjust font size for smaller screens */
+            }
+            .bottom-text {
+                font-size: 0.9rem; /* Adjust font size for smaller screens */
+            }
+            .image-container img {
+                width: 40%; /* Adjust image size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem; /* Further adjust font size for very small screens */
+            }
+            .bottom-text {
+                font-size: 0.8rem; /* Further adjust font size for very small screens */
+            }
+            .image-container img {
+                width: 80%; /* Adjust image size for very small screens */
+            }
         }
     </style>
 </head>
