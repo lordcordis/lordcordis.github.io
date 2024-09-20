@@ -1,41 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayShare</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, pink, orange);
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        .container {
+            background-color: #333; /* Dark grey */
+            width: 90vw;  /* 90% of the viewport width */
+            height: 90vh; /* 90% of the viewport height */
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 600; /* Semibold */
+            background: linear-gradient(white, lightgrey);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin: 0;
+        }
+
+        .bottom-text {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .bottom-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            margin-bottom: 10px; /* Space between description and tech list */
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .image-container img {
+            width: 20%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;My GitHub Landing Page&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Welcome to My GitHub Page&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;This is my personal GitHub landing page.&lt;/p&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="container">
+        <h1>PlayShare</h1>
+
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5190.png" alt="PlayShare Screenshot">
+            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5195.png" alt="PlayShare Screenshot">
+            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5196.png" alt="PlayShare Screenshot">
+            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5201.png" alt="PlayShare Screenshot">
+        </div>
+
+        <div class="bottom-container">
+            <div class="bottom-text description">
+                PlayShare is an iOS app designed to make sharing physical video game copies easy and convenient.
+            </div>
+            <div class="bottom-text built-with">
+                Built with SwiftUI, UIKit, Firebase, KeychainSwift, IGDB API, SDWebImage, SnapKit, ToastUI
+            </div>
+        </div>
+    </div>
 </body>
 </html>
