@@ -8,54 +8,24 @@
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(45deg, pink, orange);
             font-family: 'Helvetica', sans-serif;
+            color: black; /* Default text color */
         }
 
-        .container {
-            background-color: #333; /* Dark grey */
-            width: 90vw;  /* 90% of the viewport width */
-            height: 90vh; /* 90% of the viewport height */
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-        }
-
-        h1 {
-            font-size: 2.5rem; /* Smaller font size */
-            font-weight: 600; /* Semibold */
-            background: linear-gradient(white, lightgrey);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .top-title {
             text-align: center;
-            margin: 0 0 20px 0; /* Added bottom margin for spacing */
+            margin: 30px 0; /* Spacing for the title */
         }
 
-        .bottom-text {
-            text-align: center;
-            color: white;
-            font-size: 1rem; /* Smaller font size */
-            margin: 0 0 30px 0; /* Added bottom margin for spacing */
-        }
-
-        .bottom-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
+        .top-title h2 {
+            margin: 0; /* Remove default margin */
+            font-size: 3rem; /* Title font size */
         }
 
         .description {
-            margin-bottom: 10px; /* Space between description and tech list */
+            text-align: center;
+            font-size: 1.25rem; /* Increased font size */
+            margin: 20px 0; /* Margin for spacing */
         }
 
         .image-container {
@@ -63,61 +33,122 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            margin: 20px;
+            margin: 20px 0;
         }
 
         .image-container img {
             width: 20%;
             height: auto;
-            border-radius: 10px;
             margin: 10px;
+            border-radius: 15px; /* Rounded corners for images */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for images */
+        }
+
+        .feature-list, .built-with-list {
+            font-size: 1rem;
+            text-align: left;
+            line-height: 1.5;
+            max-width: 700px;
+            margin: 20px auto; /* Center the list */
+        }
+
+        .built-with {
+            text-align: center;
+            font-size: 2rem; /* Increased font size for built with */
+            margin: 20px 0; /* Spacing for the label */
+        }
+
+        .built-with label {
+            font-weight: bold; /* Bold for the label */
+            margin-right: 5px; /* Spacing between label and text */
+        }
+
+        .section-title {
+            font-size: 2rem; /* Title font size */
+            margin: 20px 0; /* Spacing above and below the title */
+            text-align: center; /* Center the title */
+        }
+
+        .footer {
+            text-align: center; /* Center the footer */
+            margin: 30px 0; /* Spacing for footer */
+            font-size: 1rem; /* Font size for footer */
+        }
+
+        .github-icon {
+            width: 20px; /* Icon width */
+            vertical-align: middle; /* Align icon with text */
+            margin-right: 5px; /* Space between icon and text */
         }
 
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem; /* Adjust font size for smaller screens */
-            }
-            .bottom-text {
-                font-size: 0.9rem; /* Adjust font size for smaller screens */
+            .description {
+                font-size: 1rem; /* Adjusted for smaller screens */
             }
             .image-container img {
-                width: 40%; /* Adjust image size for smaller screens */
+                width: 40%;
+            }
+            .feature-list, .built-with-list {
+                font-size: 0.9rem;
+                max-width: 90%;
             }
         }
 
         @media (max-width: 480px) {
-            h1 {
-                font-size: 1.5rem; /* Further adjust font size for very small screens */
-            }
-            .bottom-text {
-                font-size: 0.8rem; /* Further adjust font size for very small screens */
+            .description {
+                font-size: 0.9rem; /* Further adjust for very small screens */
             }
             .image-container img {
-                width: 80%; /* Adjust image size for very small screens */
+                width: 80%;
+            }
+            .feature-list, .built-with-list {
+                font-size: 0.8rem;
+                max-width: 90%;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>PlayShare</h1>
-        <div class="bottom-text description">
-            PlayShare is an iOS app designed to make sharing physical video game copies easy and convenient.
-        </div>
+    <div class="top-title">
+        <h2>PlayShare</h2> <!-- PlayShare title -->
+    </div>
 
-        <div class="image-container">
-            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5190.png" alt="PlayShare Screenshot">
-            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5238.PNG" alt="PlayShare Screenshot">
-            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5237.PNG" alt="PlayShare Screenshot">
-            <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5234.PNG" alt="PlayShare Screenshot">
-        </div>
+    <div class="description">
+        PlayShare is an iOS app designed to make sharing physical video game copies easy and convenient. <!-- Updated description -->
+    </div>
 
-        <div class="bottom-container">
-            <div class="bottom-text built-with">
-                Built with SwiftUI, UIKit, Firebase, KeychainSwift, IGDB API, SDWebImage, SnapKit, ToastUI
-            </div>
-        </div>
+    <!-- Screenshots Section -->
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5190.png" alt="PlayShare Screenshot">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5238.PNG" alt="PlayShare Screenshot">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5237.PNG" alt="PlayShare Screenshot">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5234.PNG" alt="PlayShare Screenshot">
+    </div>
+
+    <h2 class="section-title">Features</h2> <!-- Title for Features -->
+    <div class="feature-list">
+        <strong>Game Search:</strong> Search for games in the PlayShare database or import from the IGDB database.<br>
+        <strong>Game Management:</strong> Add games to your shared list, wish list, or collection.<br>
+        <strong>User Matching:</strong> View users who are sharing specific games in your city.<br>
+        <strong>Exchanges:</strong> Initiate and manage exchanges with other users.<br>
+        <strong>Telegram Integration:</strong> Continue communication via Telegram once an exchange is initiated.<br>
+        <strong>Profile Management:</strong> Update your profile with game consoles, location, and Telegram username.<br>
+        <strong>Local Games:</strong> Discover users nearby who share or want the same games.<br>
+        <strong>Exchanges Overview:</strong> Track your current, accepted, and archived exchanges in a dedicated section.<br>
+        <strong>Secure Authentication:</strong> Sign up using email/password, Google, or Apple accounts. Passwords are secured using Apple Keychain.
+    </div>
+
+    <h2 class="section-title built-with">Built with</h2> <!-- Title for Built with -->
+    <div class="built-with-list">
+        <label>SwiftUI, UIKit, Firebase, KeychainSwift, IGDB API, SDWebImage, SnapKit, ToastUI</label>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/lordcordis" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="github-icon">
+            https://github.com/lordcordis
+        </a> <!-- Link to GitHub with icon -->
     </div>
 </body>
 </html>
