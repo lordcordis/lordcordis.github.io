@@ -3,185 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayShare</title>
+    <title>Roman Korenev - CV</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Helvetica', sans-serif;
-            color: black;
-            background-color: white;
-            font-size: 1.5rem;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-
-        .top-title {
-            text-align: center;
-            margin: 30px 0;
+        h1, h2, h3 {
+            color: #333;
         }
-
-        .top-title h2 {
-            margin: 0;
-            font-size: 3rem;
+        a {
+            color: #0077cc;
+            text-decoration: none;
         }
-
-        .description {
-            text-align: center;
-            font-size: 1.75rem;
-            margin: 20px 0;
+        a:hover {
+            text-decoration: underline;
         }
-
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
+        .section {
+            margin-bottom: 20px;
         }
-
-        .image-container img {
-            width: 20%;
-            height: auto;
-            margin: 10px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .feature-list, .built-with-list {
-            font-size: 1.5rem;
-            text-align: left;
-            line-height: 1.5;
-            max-width: 700px;
-            margin: 20px auto;
-        }
-
-        .built-with {
-            text-align: center;
-            font-size: 2rem;
-            margin: 20px 0;
-        }
-
-        .built-with label {
-            font-weight: bold;
-            margin-right: 5px;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .footer {
-            text-align: center;
-            margin: 30px 0;
-            font-size: 1.25rem;
-        }
-
-        .github-icon {
-            width: 20px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-
-        /* Dark Mode Styles */
-        @media (prefers-color-scheme: dark) {
-            body {
-                color: white;
-                background-color: #121212; /* Dark background */
-            }
-
-            .top-title h2, .section-title {
-                color: #bb86fc; /* Accent color for titles */
-            }
-
-            .description {
-                color: #ffffff; /* White text for description */
-            }
-
-            .image-container img {
-                box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Adjust image shadow for dark mode */
-            }
-
-            .feature-list, .built-with-list {
-                color: #e0e0e0; /* Lighter text for readability */
-            }
-
-            .footer a {
-                color: #bb86fc; /* Accent color for links */
-            }
-
-            .github-icon {
-                filter: invert(100%); /* Invert GitHub icon for dark mode */
-            }
-        }
-
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .description {
-                font-size: 1.25rem;
-            }
-            .image-container img {
-                width: 40%;
-            }
-            .feature-list, .built-with-list {
-                font-size: 1.25rem;
-                max-width: 90%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .description {
-                font-size: 1rem;
-            }
-            .image-container img {
-                width: 80%;
-            }
-            .feature-list, .built-with-list {
-                font-size: 1rem;
-                max-width: 90%;
-            }
+        .badge {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="top-title">
-        <h2>PlayShare</h2>
+
+    <h1>Roman Korenev</h1>
+    <h2>iOS Developer</h2>
+    <p><strong>Location</strong>: Yerevan, Armenia</p>
+    <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/roman-korenev-123895188/">Roman Korenev</a></p>
+    <p><strong>GitHub</strong>: <a href="https://github.com/lordcordis">lordcordis</a></p>
+
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am an iOS developer with a background in development since 2018 and a focused learning journey since 2022. Before transitioning to iOS development, I worked as a surgeon from 2013 to 2022. My key skills include MVVM architecture, Firebase integration, and utilizing UIKit as a base for building applications with SwiftUI in containers. I am passionate about creating efficient and user-friendly applications.</p>
     </div>
 
-    <div class="description">
-        PlayShare is an iOS app designed to simplify the process of sharing physical copies of video games.
+    <div class="section">
+        <h2>Experience</h2>
+        <h3>Pet Projects</h3>
+
+        <h4>PlayShare</h4>
+        <p>An iOS application designed to streamline the sharing of physical copies of video games. Users can search for games, manage their collections, and connect with others in their area. The app features advanced search capabilities, user matching, and secure authentication through Apple Keychain. Once a match is found, users can continue communication via Telegram. The app is built using SwiftUI and UIKit, leveraging Firebase for backend functionality.</p>
+        <p>Overview: <a href="https://lordcordis.github.io/PlayShare/">PlayShare</a></p>
+
+        <h4>Cost Per Week</h4>
+        <p>A straightforward Swift app designed to help users track and manage their expenses over time. It calculates daily and weekly costs based on the total cost and usage period, providing a detailed breakdown of expenses, including add-ons like repairs. Users can visualize their spending trends through graphs and recalculate their overall balance by adding resale details. The app features a modern UI built with SwiftUI and UIKit.</p>
+        <p>Overview: <a href="https://lordcordis.github.io/Cost-Per-Week/">Cost Per Week</a></p>
+        <p class="badge"><a href="https://apps.apple.com/ru/app/cost-per-week/id6736867770"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a></p>
+        <p><a href="https://github.com/lordcordis/Cost-Per-Week">GitHub Repository</a></p>
+
+        <h3>Volunteer Experience</h3>
+        <h4>MagmaVPN Project</h4>
+        <p><strong>Volunteer Developer</strong> (April 2024 - July 2024) <br>
+        Contributed to the development and maintenance of the MagmaVPN project, collaborating with a team to improve the functionality and user experience.</p>
     </div>
 
-    <div class="image-container">
-        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5190.png" alt="PlayShare Screenshot">
-        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5238.PNG" alt="PlayShare Screenshot">
-        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5237.PNG" alt="PlayShare Screenshot">
-        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5234.PNG" alt="PlayShare Screenshot">
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages</strong>: Swift</li>
+            <li><strong>Development Tools</strong>: Xcode</li>
+            <li><strong>UI Development</strong>: Programmatic interfaces using UIKit, NSLayoutAnchor, Auto Layout, UIHostingConfiguration, UIHostingController, SnapKit, SwiftUI</li>
+            <li><strong>Design Patterns</strong>: MVVM, MVC</li>
+            <li><strong>Software Principles</strong>: Object-Oriented Programming (OOP), SOLID principles</li>
+            <li><strong>App Lifecycle</strong>: Understanding of App and ViewController lifecycle</li>
+            <li><strong>Memory Management</strong>: Automatic Reference Counting (ARC)</li>
+            <li><strong>Data Presentation</strong>: UITableView, UICollectionViews (Flow layout, Composition layout), Delegation pattern for communication between objects</li>
+            <li><strong>Networking</strong>: REST API, GraphQL, URLSession, handling POST and GET requests, JSON parsing and mapping, using asynchronous calls</li>
+            <li><strong>Firebase</strong>: Authentication, Firestore, Logging in via Apple, Google</li>
+            <li><strong>Data Persistence</strong>: plist, UserDefaults, basic knowledge of Core Data</li>
+            <li><strong>Version Control</strong>: Git</li>
+            <li><strong>Third-party Module Integration</strong>: Swift Package Manager, CocoaPods</li>
+            <li><strong>Asynchronous Programming</strong>: Grand Central Dispatch, Async/await</li>
+        </ul>
     </div>
 
-    <h2 class="section-title">Features</h2>
-    <div class="feature-list">
-        <strong>Advanced Search:</strong> Search for games in the PlayShare database or import from IGDB.<br>
-        <strong>Game Management:</strong> Add games to your shared list, wish list, or collection.<br>
-        <strong>User Matching:</strong> Find users sharing specific games in your city.<br>
-        <strong>Exchanges:</strong> Initiate and respond to exchanges with other users.<br>
-        <strong>Telegram Integration:</strong> Continue communicating via Telegram after initiating an exchange.<br>
-        <strong>Profile Management:</strong> Update your profile with game consoles, location, and Telegram username.<br>
-        <strong>Local Games:</strong> Find users nearby who share or want the same games.<br>
-        <strong>Exchange Tracker:</strong> Monitor your current, accepted, and archived exchanges in one place.<br>
-        <strong>Secure Authentication:</strong> Sign up using email/password, Google, or Apple accounts. Passwords are secured using Apple Keychain.
+    <div class="section">
+        <h2>Links</h2>
+        <p><a href="https://hh.ru/resume/dbcd8617ff06d96d5f0039ed1f4355656f4970">HH.ru Resume</a></p>
     </div>
 
-    <h2 class="section-title built-with">Stack</h2>
-    <div class="built-with-list">
-        <label>SwiftUI, UIKit, Firebase, KeychainSwift, IGDB API, SDWebImage, SnapKit, ToastUI</label>
+    <div class="section">
+        <h2>Contact Information</h2>
+        <p><strong>Email</strong>: <a href="mailto:devkorenev@gmail.com">devkorenev@gmail.com</a></p>
     </div>
 
-    <div class="footer">
-        <a href="https://github.com/lordcordis" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="github-icon">
-            https://github.com/lordcordis
-        </a>
-    </div>
 </body>
 </html>
