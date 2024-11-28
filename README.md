@@ -1,6 +1,6 @@
 # Roman Korenev  
 **iOS Developer**  
-**Location**: Yerevan, Armenia  
+**Location**: Tbilisi, Georgia  
 **LinkedIn**: [Roman Korenev](https://www.linkedin.com/in/roman-korenev-123895188/)  
 **GitHub**: [lordcordis](https://github.com/lordcordis)  
 
