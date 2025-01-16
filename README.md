@@ -12,8 +12,13 @@ I am an iOS developer with a background in development since 2018 and a focused 
 
 - **PlayShare**  
   An iOS application designed to streamline the sharing of physical copies of video games. Users can search for games, manage their collections, and connect with others in their area. The app features advanced search capabilities, user matching, and secure authentication through Apple Keychain. Once a match is found, users can continue communication via Telegram. The app is built using SwiftUI and UIKit, leveraging Firebase for backend functionality.  
-  Overview: [PlayShare](https://lordcordis.github.io/PlayShare/)  
+  Overview: [PlayShare](https://lordcordis.github.io/PlayShare/)
+  
+  [![TestFlight](https://developer.apple.com/assets/elements/icons/testflight/testflight-64x64_2x.png)](https://testflight.apple.com/join/838tPCW4)  
+  [Join the Beta Test for PlayShare](https://testflight.apple.com/join/838tPCW4)
 
+
+  
 - **Cost Per Week**  
   A straightforward Swift app designed to help users track and manage their expenses over time. It calculates daily and weekly costs based on the total cost and usage period, providing a detailed breakdown of expenses, including add-ons like repairs. Users can visualize their spending trends through graphs and recalculate their overall balance by adding resale details. The app features a modern UI built with SwiftUI and UIKit.  
   Overview: [Cost Per Week](https://lordcordis.github.io/Cost-Per-Week/)
